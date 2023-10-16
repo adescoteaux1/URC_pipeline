@@ -1,0 +1,1 @@
+SELECT college_name, college_acronym FROM public."college";
