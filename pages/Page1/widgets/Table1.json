@@ -29,7 +29,7 @@
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
-    "variant": "DEFAULT",
+    "variant": "VARIANT2",
     "defaultSelectedRowIndex": 0,
     "showInlineEditingOptionDropdown": true,
     "flexVerticalAlignment": "start",
@@ -87,7 +87,7 @@
         {"key": "primaryColumns.EditActions1.isSaveDisabled"},
         {"key": "primaryColumns.EditActions1.isDiscardDisabled"}
     ],
-    "compactMode": "SHORT",
+    "compactMode": "DEFAULT",
     "displayName": "Table",
     "bottomRow": 47,
     "columnWidthMap": {
@@ -135,7 +135,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Professor",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "Availability": {
@@ -165,7 +165,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Availability",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "EditActions1": {
@@ -205,6 +205,7 @@
             "saveIconAlign": "left",
             "originalId": "EditActions1",
             "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "Research_Position": {
@@ -234,7 +235,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Research Position",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "Lab_Name": {
@@ -264,7 +265,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Lab Name",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "Special_Requirements": {
@@ -294,7 +295,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Special Requirements",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         }
     },
@@ -319,5 +320,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 0,
     "isVisiblePagination": true,
+    "cellBackground": "#fadcd9",
     "verticalAlignment": "CENTER"
 }

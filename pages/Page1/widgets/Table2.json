@@ -1,5 +1,5 @@
 {
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "borderColor": "#E0DEDE",
     "isVisibleDownload": false,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
@@ -12,7 +12,6 @@
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "boxShadow"},
         {"key": "tableData"},
         {"key": "primaryColumns.email.computedValue"},
         {"key": "primaryColumns.professor_id.computedValue"},
@@ -22,6 +21,7 @@
     "needsHeightForContent": true,
     "leftColumn": 0,
     "delimiter": ",",
+    "variant": "VARIANT2",
     "defaultSelectedRowIndex": 0,
     "flexVerticalAlignment": "start",
     "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -108,7 +108,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Department",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "professor_id": {
@@ -138,7 +138,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "professor_id",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "email": {
@@ -168,7 +168,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "email",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         },
         "Name": {
@@ -198,7 +198,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Name",
-            "cellBackground": "",
+            "cellBackground": "#fadcd9",
             "verticalAlignment": "CENTER"
         }
     },
@@ -222,5 +222,6 @@
     "responsiveBehavior": "fill",
     "mobileLeftColumn": 6,
     "isVisiblePagination": true,
+    "cellBackground": "#fadcd9",
     "verticalAlignment": "CENTER"
 }
