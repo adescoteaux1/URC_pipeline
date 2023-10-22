@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "get_colleges",
+    "name": "get_profs",
     "datasource": {
       "name": "urc",
       "pluginId": "postgres-plugin",
@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT college_name, college_acronym FROM public.\"college\";",
+      "body": "SELECT concat(first_name, ' ',  last_name) as \"name\", email, department_name, professor_id FROM public.\"professors\" p join teacher_department t on p.professor_id = t.teacher_id join public.\"department\" d on t.department_id = d.department_id;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -26,7 +26,7 @@
         }
       ]
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-10-16T10:51:23Z"
+    "createdAt": "2023-10-22T17:26:03Z"
   },
-  "id": "Page1_get_colleges",
+  "id": "Page1_get_profs",
   "deleted": false,
-  "gitSyncId": "65259f9c2be41c5c758b0400_652d15abdef2972e48e9a7ae"
+  "gitSyncId": "65259f9c2be41c5c758b0400_65355b2b9fb2905697b0fc94"
 }

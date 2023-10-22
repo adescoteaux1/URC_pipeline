@@ -3,7 +3,7 @@ SELECT
 FROM
   public.users
 WHERE
-  "gender" ilike '%{{Table1.searchText}}%'
+  "gender" like '%{{Table1.searchText}}%'
 ORDER BY
   "{{Table1.sortOrder.column || 'id'}}" {{Table1.sortOrder.order !== "desc" ? "" : "DESC"}}
 LIMIT

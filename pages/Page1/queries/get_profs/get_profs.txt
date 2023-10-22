@@ -1,0 +1,1 @@
+SELECT concat(first_name, ' ',  last_name) as "name", email, department_name, professor_id FROM public."professors" p join teacher_department t on p.professor_id = t.teacher_id join public."department" d on t.department_id = d.department_id;
