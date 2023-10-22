@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 810,
+          "bottomRow": 1170,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -29,16 +29,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_get_prof_name",
-              "name": "get_prof_name",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Page1_get_profs",
-              "name": "get_profs",
+              "id": "Page1_get_department",
+              "name": "get_department",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -63,6 +55,18 @@
                 "Table1.pageSize",
                 "Select2.selectedOptionValue",
                 "(Table1.pageNo -1) * Table1.pageSize"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Page1_get_profs",
+              "name": "get_profs",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "Table2.pageSize",
+                "Select1.selectedOptionValue",
+                "(Table2.pageNo -1) * Table2.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }

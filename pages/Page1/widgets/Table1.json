@@ -89,7 +89,7 @@
     ],
     "compactMode": "SHORT",
     "displayName": "Table",
-    "bottomRow": 44,
+    "bottomRow": 47,
     "columnWidthMap": {
         "Availability": 115,
         "Professor": 140,
