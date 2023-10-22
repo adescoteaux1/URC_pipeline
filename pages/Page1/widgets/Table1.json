@@ -84,7 +84,8 @@
     "columnWidthMap": {
         "Availability": 115,
         "Professor": 140,
-        "Research_Position": 217
+        "Research_Position": 217,
+        "Lab_Name": 150
     },
     "parentRowSpace": 10,
     "hideCard": false,
@@ -126,7 +127,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Professor",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "Availability": {
@@ -156,7 +157,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Availability",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "Research_Position": {
@@ -186,7 +187,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Research Position",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "Lab_Name": {
@@ -216,7 +217,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Lab Name",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "Special_Requirements": {
@@ -246,7 +247,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Special Requirements",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         }
     },
@@ -272,6 +273,6 @@
     "originalTopRow": 14,
     "mobileLeftColumn": 0,
     "isVisiblePagination": true,
-    "cellBackground": "#fadcd9",
+    "cellBackground": "#e8e8ed",
     "verticalAlignment": "CENTER"
 }

@@ -74,7 +74,7 @@
     "dynamicPropertyPathList": [],
     "displayName": "Table",
     "bottomRow": 164,
-    "columnWidthMap": {},
+    "columnWidthMap": {"email": 226},
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 40,
@@ -109,7 +109,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Department",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "professor_id": {
@@ -139,7 +139,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "professor_id",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "email": {
@@ -169,7 +169,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "email",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         },
         "Name": {
@@ -199,7 +199,7 @@
             "enableFilter": true,
             "sticky": "",
             "originalId": "Name",
-            "cellBackground": "#fadcd9",
+            "cellBackground": "#e8e8ed",
             "verticalAlignment": "CENTER"
         }
     },
@@ -224,6 +224,6 @@
     "originalTopRow": 57,
     "mobileLeftColumn": 6,
     "isVisiblePagination": true,
-    "cellBackground": "#fadcd9",
+    "cellBackground": "#e8e8ed",
     "verticalAlignment": "CENTER"
 }
