@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1640,
+          "bottomRow": 660,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -28,14 +28,6 @@
         },
         "layoutOnLoadActions": [
           [
-            {
-              "id": "Page1_get_department",
-              "name": "get_department",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
             {
               "id": "Page1_get_research_focus",
               "name": "get_research_focus",
@@ -55,18 +47,6 @@
                 "Table1.pageSize",
                 "Select2.selectedOptionValue",
                 "(Table1.pageNo -1) * Table1.pageSize"
-              ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Page1_get_profs",
-              "name": "get_profs",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "Table2.pageSize",
-                "Select1.selectedOptionValue",
-                "(Table2.pageNo -1) * Table2.pageSize"
               ],
               "timeoutInMillisecond": 10000
             }
