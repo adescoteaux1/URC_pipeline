@@ -2,6 +2,7 @@ select
 	position AS "Research Position", 
 	lab_name AS "Lab Name", 
 	concat(first_name, ' ',  last_name) as "Professor",
+	"email" as "Email",
 	available as "Availability",
 	"Special Requirements"
 from 

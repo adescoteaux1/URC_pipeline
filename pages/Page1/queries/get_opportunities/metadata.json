@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \n\tposition AS \"Research Position\", \n\tlab_name AS \"Lab Name\", \n\tconcat(first_name, ' ',  last_name) as \"Professor\",\n\tavailable as \"Availability\",\n\t\"Special Requirements\"\nfrom \n\tpublic.\"research_opportunities\" o LEFT JOIN \n\tpublic.\"labs\" l on l.lab_id = o.lab_id JOIN\n\t(public.\"research_profs\" p JOIN public.\"professors\" prof on p.professor_id = prof.professor_id) on o.opp_id = p.opp_id JOIN public.\"research_focus\" f on f.opp_id = o.opp_id join public.\"focus\" focus on f.focus_id = focus.focus_id\n\t\nWHERE FOCUS LIKE  \"{{Select2.selectedOptionValue}}\"\nORDER BY f.focus_id\nlimit {{Table1.pageSize}} OFFSET {{(Table1.pageNo -1) * Table1.pageSize}};",
+      "body": "select \n\tposition AS \"Research Position\", \n\tlab_name AS \"Lab Name\", \n\tconcat(first_name, ' ',  last_name) as \"Professor\",\n\t\"email\" as \"Email\",\n\tavailable as \"Availability\",\n\t\"Special Requirements\"\nfrom \n\tpublic.\"research_opportunities\" o LEFT JOIN \n\tpublic.\"labs\" l on l.lab_id = o.lab_id JOIN\n\t(public.\"research_profs\" p JOIN public.\"professors\" prof on p.professor_id = prof.professor_id) on o.opp_id = p.opp_id JOIN public.\"research_focus\" f on f.opp_id = o.opp_id join public.\"focus\" focus on f.focus_id = focus.focus_id\n\t\nWHERE FOCUS LIKE  \"{{Select2.selectedOptionValue}}\"\nORDER BY f.focus_id\nlimit {{Table1.pageSize}} OFFSET {{(Table1.pageNo -1) * Table1.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
