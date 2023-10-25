@@ -1,3 +1,3 @@
-SELECT concat(first_name, ' ',  last_name) as "Name", email, d.department_name AS "Department", professor_id FROM public."professors" p join teacher_department t on p.professor_id = t.teacher_id join public."department" d on t.department_id = d.department_id
-WHERE d.department_name LIKE "{{Select1.selectedOptionValue}}"
-limit {{Table2.pageSize}} OFFSET {{(Table2.pageNo -1) * Table2.pageSize}};
+SELECT concat(first_name, ' ',  last_name) as "Name", email, d.department_name AS "Department", professor_id FROM public."professors" p join teacher_department t on p.professor_id = t.teacher_id join public."department" d on t.department_id = d.department_id;
+/*WHERE d.department_name LIKE "{{Select1.selectedOptionValue}}"
+//limit {{Table2.pageSize}} OFFSET {{(Table2.pageNo -1) * //Table2.pageSize}};

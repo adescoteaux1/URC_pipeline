@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT concat(first_name, ' ',  last_name) as \"Name\", email, d.department_name AS \"Department\", professor_id FROM public.\"professors\" p join teacher_department t on p.professor_id = t.teacher_id join public.\"department\" d on t.department_id = d.department_id\nWHERE d.department_name LIKE \"{{Select1.selectedOptionValue}}\"\nlimit {{Table2.pageSize}} OFFSET {{(Table2.pageNo -1) * Table2.pageSize}};",
+      "body": "SELECT concat(first_name, ' ',  last_name) as \"Name\", email, d.department_name AS \"Department\", professor_id FROM public.\"professors\" p join teacher_department t on p.professor_id = t.teacher_id join public.\"department\" d on t.department_id = d.department_id;\n/*WHERE d.department_name LIKE \"{{Select1.selectedOptionValue}}\"\n//limit {{Table2.pageSize}} OFFSET {{(Table2.pageNo -1) * //Table2.pageSize}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(Table2.pageNo -1) * Table2.pageSize",
+      "(Table2.pageNo -1) * //Table2.pageSize",
       "Select1.selectedOptionValue",
       "Table2.pageSize"
     ],
