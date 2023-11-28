@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "select \n\tposition AS \"Research Position\", \n\tlabName AS \"Lab Name\", \n\tconcat(first_name, ' ',  last_name) as \"Professor\",\n\t\"contact\" as \"Email\",\n\tavailability as \"Availability\",\n\tspecial_requirements as \"Special Requirements\",\n\tfocus.focus as \"Focus\",\n\t*\nfrom \n\tpublic.\"Opportunities\" o LEFT JOIN \n\tpublic.\"Labs\" l on l.id = o.lab_id JOIN\n\t(public.\"prof_opp\" p JOIN public.\"Professors\" prof on p.prof_id = prof.id) on o.id = p.opp_id JOIN public.\"opp_focus\" f on f.opp_id = o.id join public.\"Focus\" focus on f.focus_id = focus.id\n\t\nWHERE \n\nfocus LIKE \"{{Select2.selectedOptionValue}}\"\n\nORDER BY f.focus_id\nlimit {{Table1.pageSize}} OFFSET {{(Table1.pageNo -1) * Table1.pageSize}};\n",
+      "body": "select \n\tposition AS \"Research Position\", \n\tlabName AS \"Lab Name\", \n\tconcat(first_name, ' ',  last_name) as \"Professor\",\n\t\"contact\" as \"Email\",\n\tavailability as \"Availability\",\n\tspecial_requirements as \"Special Requirements\",\n\tfocus.focus as \"Focus\",\n\t*\nfrom \n\tpublic.\"Opportunities\" o LEFT JOIN \n\tpublic.\"Labs\" l on l.id = o.lab_id JOIN\n\t(public.\"prof_opp\" p JOIN public.\"Professors\" prof on p.prof_id = prof.id) on o.id = p.opp_id JOIN public.\"opp_focus\" f on f.opp_id = o.id join public.\"Focus\" focus on f.focus_id = focus.id\n\t\nWHERE \n\nfocus LIKE \"{{Select2.selectedOptionValue}}\"\n\nORDER BY f.focus_id\nlimit {{Table1.pageSize}} OFFSET {{(Table1.pageNo - 1) * Table1.pageSize}};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,7 +36,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(Table1.pageNo -1) * Table1.pageSize",
+      "(Table1.pageNo - 1) * Table1.pageSize",
       "Select2.selectedOptionValue",
       "Table1.pageSize"
     ],

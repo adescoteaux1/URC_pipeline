@@ -6,7 +6,7 @@
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
     "topRow": 19,
     "isSortable": true,
-    "onPageChange": "{{get_opportunities.run();\nget_opportunities.run()}}",
+    "onPageChange": "{{get_opps.run();\nget_opps.run()}}",
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
     "animateLoading": true,

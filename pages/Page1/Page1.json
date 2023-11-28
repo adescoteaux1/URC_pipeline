@@ -44,9 +44,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
+                "(Table1.pageNo - 1) * Table1.pageSize",
                 "Table1.pageSize",
-                "Select2.selectedOptionValue",
-                "(Table1.pageNo -1) * Table1.pageSize"
+                "Select2.selectedOptionValue"
               ],
               "timeoutInMillisecond": 10000
             }
