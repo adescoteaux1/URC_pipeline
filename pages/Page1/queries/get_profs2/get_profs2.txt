@@ -1,0 +1,1 @@
+select * from public."Professors" p join public."prof_department" pd on p.id = pd.prof;

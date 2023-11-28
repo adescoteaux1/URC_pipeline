@@ -1,0 +1,20 @@
+select 
+	position AS "Research Position", 
+	labName AS "Lab Name", 
+	concat(first_name, ' ',  last_name) as "Professor",
+	"contact" as "Email",
+	availability as "Availability",
+	special_requirements as "Special Requirements",
+	focus.focus as "Focus",
+	*
+from 
+	public."Opportunities" o LEFT JOIN 
+	public."Labs" l on l.id = o.lab_id JOIN
+	(public."prof_opp" p JOIN public."Professors" prof on p.prof_id = prof.id) on o.id = p.opp_id JOIN public."opp_focus" f on f.opp_id = o.id join public."Focus" focus on f.focus_id = focus.id
+	
+WHERE 
+
+focus LIKE "{{Select2.selectedOptionValue}}"
+
+ORDER BY f.focus_id
+limit {{Table1.pageSize}} OFFSET {{(Table1.pageNo -1) * Table1.pageSize}};

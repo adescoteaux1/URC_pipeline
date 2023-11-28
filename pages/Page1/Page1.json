@@ -29,8 +29,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_get_research_focus",
-              "name": "get_research_focus",
+              "id": "Page1_get_focus",
+              "name": "get_focus",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -39,8 +39,8 @@
           ],
           [
             {
-              "id": "Page1_get_opportunities",
-              "name": "get_opportunities",
+              "id": "Page1_get_opps",
+              "name": "get_opps",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
