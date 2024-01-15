@@ -61,7 +61,6 @@
                 "identifier": "professor",
                 "boxShadow": "none",
                 "isRequired": false,
-                "isFilterable": false,
                 "isCustomField": false,
                 "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.professor))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -69,28 +68,15 @@
                 "accessor": "professor",
                 "isVisible": true,
                 "label": "Professor",
-                "serverSideFiltering": false,
                 "originalIdentifier": "professor",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "children": {},
-                "options": [
-                    {
-                        "label": "Blue",
-                        "value": "BLUE"
-                    },
-                    {
-                        "label": "Green",
-                        "value": "GREEN"
-                    },
-                    {
-                        "label": "Red",
-                        "value": "RED"
-                    }
-                ],
+                "isSpellCheck": false,
+                "iconAlign": "left",
                 "position": 8,
                 "isDisabled": false,
                 "sourceData": ["Sijia Dong"],
-                "fieldType": "Multiselect"
+                "fieldType": "Text Input"
             },
             "campus": {
                 "labelTextSize": "0.875rem",
@@ -110,7 +96,7 @@
                 "isSpellCheck": false,
                 "iconAlign": "left",
                 "position": 1,
-                "isDisabled": false,
+                "isDisabled": true,
                 "sourceData": "Boston",
                 "fieldType": "Text Input"
             },
@@ -211,7 +197,7 @@
                 "isSpellCheck": false,
                 "iconAlign": "left",
                 "position": 0,
-                "isDisabled": false,
+                "isDisabled": true,
                 "sourceData": "Machine learning background",
                 "fieldType": "Text Input"
             },
@@ -233,7 +219,7 @@
                 "isSpellCheck": false,
                 "iconAlign": "left",
                 "position": 2,
-                "isDisabled": false,
+                "isDisabled": true,
                 "sourceData": "Yes",
                 "fieldType": "Text Input"
             },
@@ -271,7 +257,7 @@
         "cellBoxShadow": "none",
         "fieldType": "Object"
     }},
-    "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+    "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
     "widgetName": "update_form",
     "submitButtonStyles": {
         "boxShadow": "none",
@@ -288,18 +274,18 @@
     ],
     "displayName": "JSON Form",
     "iconSVG": "/static/media/icon.6bacf7df.svg",
-    "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
+    "onSubmit": "",
     "topRow": 0,
     "bottomRow": 86,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
-    "title": "Update Row opp_id: {{data_table.selectedRow.opp_id}}",
+    "title": "{{data_table.selectedRow.position}} Position",
     "type": "JSON_FORM_WIDGET",
     "hideCard": false,
     "animateLoading": true,
     "parentColumnSpace": 16.3125,
     "dynamicTriggerPathList": [{"key": "onSubmit"}],
-    "leftColumn": 48,
+    "leftColumn": 28,
     "dynamicBindingPathList": [
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "sourceData"},
@@ -310,7 +296,6 @@
         {"key": "resetButtonStyles.buttonColor"},
         {"key": "resetButtonStyles.borderRadius"},
         {"key": "borderRadius"},
-        {"key": "boxShadow"},
         {"key": "submitButtonStyles.borderRadius"},
         {"key": "submitButtonStyles.buttonColor"},
         {"key": "schema.__root_schema__.children.position.defaultValue"},
@@ -361,7 +346,7 @@
         "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
         "buttonVariant": "SECONDARY"
     },
-    "isVisible": "{{!!data_table.selectedRow.opp_id}}",
+    "isVisible": "{{!!data_table.selectedRow.position}}",
     "version": 1,
     "parentId": "0",
     "renderMode": "CANVAS",
@@ -449,5 +434,6 @@
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "maxDynamicHeight": 9000,
+    "useSourceData": false,
     "minDynamicHeight": 4
 }
