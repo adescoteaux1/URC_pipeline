@@ -1,0 +1,12 @@
+UPDATE public."Research" SET
+		"focus" = '{{update_form.fieldState.focus.isVisible ? update_form.formData.focus : update_form.sourceData.focus}}',
+		"position" = '{{update_form.fieldState.position.isVisible ? update_form.formData.position : update_form.sourceData.position}}',
+    "campus" = '{{update_form.fieldState.campus.isVisible ? update_form.formData.campus : update_form.sourceData.campus}}',
+		"availability" = '{{update_form.fieldState.availability.isVisible ? update_form.formData.availability : update_form.sourceData.availability}}',
+		"virtual" = '{{update_form.fieldState.virtual.isVisible ? update_form.formData.virtual : update_form.sourceData.virtual}}',
+		"special_requirements" = '{{update_form.fieldState.special_requirements.isVisible ? update_form.formData.special_requirements : update_form.sourceData.special_requirements}}',
+		"description" = '{{update_form.fieldState.description.isVisible ? update_form.formData.description : update_form.sourceData.description}}',
+		"lab" = '{{update_form.fieldState.lab.isVisible ? update_form.formData.lab : update_form.sourceData.lab}}',
+		"professor" = '{{update_form.fieldState.professor.isVisible ? update_form.formData.professor : update_form.sourceData.professor}}',
+		"contact" = '{{update_form.fieldState.contact.isVisible ? update_form.formData.contact : update_form.sourceData.contact}}'
+WHERE "opp_id" = {{data_table.selectedRow.opp_id}};

@@ -1,0 +1,24 @@
+INSERT INTO public."Research" (
+	"opp_id",
+	"focus",
+	"position",
+	"campus",
+	"availability",
+	"virtual",
+	"special_requirements",
+	"description",
+	"lab",
+	"professor",
+	"contact")
+VALUES (
+	'{{insert_form.formData.opp_id}}',
+	'{{insert_form.formData.focus}}',
+	'{{insert_form.formData.position}}',
+	'{{insert_form.formData.campus}}',
+	'{{insert_form.formData.availability}}',
+	'{{insert_form.formData.virtual}}',
+	'{{insert_form.formData.special_requirements}}',
+	'{{insert_form.formData.description}}',
+	'{{insert_form.formData.lab}}',
+	'{{insert_form.formData.professor}}',
+	'{{insert_form.formData.contact}}');
