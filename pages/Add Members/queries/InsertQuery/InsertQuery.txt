@@ -1,0 +1,10 @@
+INSERT INTO public."Members" (
+	"id",
+	"firstName",
+	"lastName",
+	"email")
+VALUES (
+	'{{insert_form.formData.id}}',
+	'{{insert_form.formData.firstName}}',
+	'{{insert_form.formData.lastName}}',
+	'{{insert_form.formData.email}}');

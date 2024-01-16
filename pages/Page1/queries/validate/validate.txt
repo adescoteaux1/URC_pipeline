@@ -1,0 +1,4 @@
+SELECT * FROM public."Members"
+WHERE "email" ILIKE '{{email.text}}'
+AND "firstName" ILIKE '{{first_name.text}}'
+AND "lastName" ILIKE '{{last_name.text}}';

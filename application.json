@@ -5,7 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "Public.Research",
+      "id": "Boston Research",
+      "isDefault": false
+    },
+    {
+      "id": "Add Members",
+      "isDefault": false
+    },
+    {
+      "id": "Add Research",
       "isDefault": false
     }
   ],

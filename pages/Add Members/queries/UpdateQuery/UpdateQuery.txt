@@ -1,0 +1,5 @@
+UPDATE public."Members" SET
+		"firstName" = '{{update_form.fieldState.firstName.isVisible ? update_form.formData.firstName : update_form.sourceData.firstName}}',
+		"lastName" = '{{update_form.fieldState.lastName.isVisible ? update_form.formData.lastName : update_form.sourceData.lastName}}',
+    "email" = '{{update_form.fieldState.email.isVisible ? update_form.formData.email : update_form.sourceData.email}}'
+WHERE "id" = {{data_table.selectedRow.id}};

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "get_focus",
+    "name": "Query1",
     "datasource": {
       "name": "urc_pipline",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
+    "pageId": "Boston Research",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT * FROM public.\"Focus\";",
+      "body": "Select professor from \"Research\";",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -36,9 +36,9 @@
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": [],
-    "createdAt": "2023-11-27T23:04:20Z"
+    "createdAt": "2024-01-15T17:36:49Z"
   },
-  "id": "Page1_get_focus",
+  "id": "Boston Research_Query1",
   "deleted": false,
-  "gitSyncId": "65259f9c2be41c5c758b0400_65652074949586492b28f5a8"
+  "gitSyncId": "65259f9c2be41c5c758b0400_65a56d311f076a52e45a4c76"
 }
