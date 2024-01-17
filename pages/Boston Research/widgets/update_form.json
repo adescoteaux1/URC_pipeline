@@ -56,10 +56,13 @@
         {"key": "schema.__root_schema__.children.professor.cellBorderRadius"},
         {"key": "schema.__root_schema__.children.opp_id.defaultValue"},
         {"key": "schema.__root_schema__.children.opp_id.borderRadius"},
-        {"key": "schema.__root_schema__.children.opp_id.accentColor"}
+        {"key": "schema.__root_schema__.children.opp_id.accentColor"},
+        {"key": "schema.__root_schema__.children.date_added.defaultValue"},
+        {"key": "schema.__root_schema__.children.date_added.borderRadius"},
+        {"key": "schema.__root_schema__.children.date_added.accentColor"}
     ],
     "showReset": false,
-    "dynamicHeight": "FIXED",
+    "dynamicHeight": "AUTO_HEIGHT",
     "autoGenerateForm": true,
     "bottomRowBeforeCollapse": 86,
     "resetButtonStyles": {
@@ -151,7 +154,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 86,
+    "originalBottomRow": 138,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -187,6 +190,28 @@
                 "iconAlign": "left",
                 "position": 9,
                 "isDisabled": true,
+                "fieldType": "Text Input"
+            },
+            "date_added": {
+                "labelTextSize": "0.875rem",
+                "identifier": "date_added",
+                "boxShadow": "none",
+                "isRequired": false,
+                "isCustomField": false,
+                "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.date_added))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "dataType": "string",
+                "accessor": "date_added",
+                "isVisible": false,
+                "label": "Date Added",
+                "originalIdentifier": "date_added",
+                "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+                "children": {},
+                "isSpellCheck": false,
+                "iconAlign": "left",
+                "position": 11,
+                "isDisabled": false,
+                "sourceData": "2024-01-17T00:00:00Z",
                 "fieldType": "Text Input"
             },
             "virtual": {
@@ -361,7 +386,7 @@
                 "iconAlign": "left",
                 "position": 2,
                 "isDisabled": true,
-                "fieldType": "Text Input"
+                "fieldType": "Multiline Text Input"
             },
             "focus": {
                 "labelTextSize": "0.875rem",
@@ -383,7 +408,7 @@
                 "position": 1,
                 "isDisabled": true,
                 "sourceData": "Coding/Machine Learning",
-                "fieldType": "Text Input"
+                "fieldType": "Multiline Text Input"
             },
             "position": {
                 "labelTextSize": "0.875rem",
@@ -405,7 +430,7 @@
                 "position": 0,
                 "isDisabled": true,
                 "sourceData": "Machine learning background",
-                "fieldType": "Text Input"
+                "fieldType": "Multiline Text Input"
             },
             "availability": {
                 "labelTextSize": "0.875rem",
@@ -477,11 +502,12 @@
         {"key": "onSubmit"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 86,
+    "bottomRow": 138,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "{{data_table.selectedRow.position}} Position",
     "hideCard": false,
+    "shouldScrollContents": true,
     "parentColumnSpace": 16.3125,
     "dynamicTriggerPathList": [{"key": "onSubmit"}],
     "borderWidth": "0",
