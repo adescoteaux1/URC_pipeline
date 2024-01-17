@@ -20,7 +20,6 @@
         {"key": "submitButtonStyles.borderRadius"},
         {"key": "schema.__root_schema__.children.position.defaultValue"},
         {"key": "schema.__root_schema__.children.position.borderRadius"},
-        {"key": "schema.__root_schema__.children.position.accentColor"},
         {"key": "schema.__root_schema__.children.campus.defaultValue"},
         {"key": "schema.__root_schema__.children.campus.borderRadius"},
         {"key": "schema.__root_schema__.children.campus.accentColor"},
@@ -59,7 +58,8 @@
         {"key": "schema.__root_schema__.children.opp_id.accentColor"},
         {"key": "schema.__root_schema__.children.date_added.defaultValue"},
         {"key": "schema.__root_schema__.children.date_added.borderRadius"},
-        {"key": "schema.__root_schema__.children.date_added.accentColor"}
+        {"key": "schema.__root_schema__.children.date_added.accentColor"},
+        {"key": "schema.__root_schema__.children.position.accentColor"}
     ],
     "showReset": false,
     "dynamicHeight": "AUTO_HEIGHT",
@@ -202,7 +202,7 @@
                 "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
                 "dataType": "string",
                 "accessor": "date_added",
-                "isVisible": false,
+                "isVisible": true,
                 "label": "Date Added",
                 "originalIdentifier": "date_added",
                 "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -210,7 +210,7 @@
                 "isSpellCheck": false,
                 "iconAlign": "left",
                 "position": 11,
-                "isDisabled": false,
+                "isDisabled": true,
                 "sourceData": "2024-01-17T00:00:00Z",
                 "fieldType": "Text Input"
             },
@@ -427,6 +427,7 @@
                 "children": {},
                 "isSpellCheck": false,
                 "iconAlign": "left",
+                "labelTextColor": "#231f20",
                 "position": 0,
                 "isDisabled": true,
                 "sourceData": "Machine learning background",
@@ -502,7 +503,7 @@
         {"key": "onSubmit"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 138,
+    "bottomRow": 146,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "{{data_table.selectedRow.position}} Position",
