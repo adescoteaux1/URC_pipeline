@@ -7,7 +7,7 @@
     "type": "JSON_FORM_WIDGET",
     "topRowBeforeCollapse": 0,
     "animateLoading": true,
-    "leftColumn": 42,
+    "leftColumn": 35,
     "dynamicBindingPathList": [
         {"key": "schema.__root_schema__.defaultValue"},
         {"key": "sourceData"},
@@ -154,7 +154,7 @@
     },
     "disabledWhenInvalid": true,
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-    "originalBottomRow": 137,
+    "originalBottomRow": 146,
     "useSourceData": false,
     "schema": {"__root_schema__": {
         "labelTextSize": "0.875rem",
@@ -503,7 +503,7 @@
         {"key": "onSubmit"}
     ],
     "displayName": "JSON Form",
-    "bottomRow": 146,
+    "bottomRow": 143,
     "fieldLimitExceeded": false,
     "parentRowSpace": 10,
     "title": "{{data_table.selectedRow.position}} Position",
