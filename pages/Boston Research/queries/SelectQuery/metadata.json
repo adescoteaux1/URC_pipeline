@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"Research\"\nWHERE (\"Research\".Position ilike '%{{data_table.searchText || \"\"}}%') AND campus LIKE '%Boston%' AND status = 'Approved'\nORDER BY \"{{data_table.sortOrder.column || 'opp_id'}}\" {{data_table.sortOrder.order || 'ASC'}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM public.\"Research\"\nWHERE (\"Research\".Position ilike '%{{data_table.searchText || \"\"}}%') AND campus LIKE '%Boston%' AND status = 'Approved'\nAND \"Research\".\"Term\" IN ({{termSelect.selectedOptionValues.map(value => `'${value}'`).join(',')}})\nORDER BY \"{{data_table.sortOrder.column || 'opp_id'}}\" {{data_table.sortOrder.order || 'ASC'}} \nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
